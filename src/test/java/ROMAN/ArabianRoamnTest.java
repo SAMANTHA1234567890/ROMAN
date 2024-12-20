@@ -12,22 +12,22 @@ public class ArabianRoamnTest {
     public void test1(){
     List <String> EX = Collections.singletonList("I");
     List <String> RE = ArabianRoman.transfer(1);
-   // AssertThat(RE).isEqualTo(EX);
-    assertEquals(EX, RE, "hope");
+    assertThat(RE).isEqualTo(EX);  // the problem is i rote assertthat with a big A
+   //  assertEquals(EX, RE, "hope");
     }
     @Test
     public void test2(){
         List <String> EX = Collections.singletonList("II");
         List <String> RE = ArabianRoman.transfer(2);
-        // AssertThat(RE).isEqualTo(EX);
+        assertThat(RE).isEqualTo(EX);
        // assertEquals(EX, RE, "hope");
     }
     @Test
     public void test3(){
         List <String> EX = Collections.singletonList("III");
         List <String> RE = ArabianRoman.transfer(3);
-        // AssertThat(RE).isEqualTo(EX);
-      //  assertEquals(EX, RE, "hope");
+         assertThat(RE).isEqualTo(EX);
+      // assertEquals(EX, RE, "hope");
     }
 
     @Test
@@ -40,8 +40,8 @@ public class ArabianRoamnTest {
                 EX.add("X");
 
         List <String> RE = ArabianRoman.transfer(39);
-        // AssertThat(RE).isEqualTo(EX);
-     //  assertEquals(EX, RE, "There is no problem");
+        assertThat(RE).isEqualTo(EX);
+     // assertEquals(EX, RE, "There is no problem");
 
 
     }
